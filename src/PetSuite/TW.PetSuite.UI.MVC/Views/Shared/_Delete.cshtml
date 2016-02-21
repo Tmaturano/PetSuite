@@ -1,0 +1,39 @@
+﻿@model TW.PetSuite.Application.ViewModels.DeleteModalViewModel
+<!--modal -->
+<div class="modal fade" id="modalDeletePadrao" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+        <div class="modal-content">            
+            @using (Html.BeginForm(Model.Action, Model.Controller, FormMethod.Post, new { @class = "form-horinzontal" }))
+            {                
+                @Html.HiddenFor(model => model.Identificador)
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Excluir @Html.DisplayFor(model => model.Tipo)</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <h5>Deseja excluir este @Html.DisplayFor(model => model.Tipo)? </h5>
+                        @Html.DisplayFor(model => model.Descricao)
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <p>
+                        <input type="submit" id="btnApagar" value="Apagar" class="btn btn-danger" />
+                        <button class="btn" value="Cancelar" aria-hidden="true" data-dismiss="modal">Cancelar</button>
+                    </p>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    @Scripts.Render("~/bundles/jqueryval")
+
+    <script>
+
+    </script>
+
+}

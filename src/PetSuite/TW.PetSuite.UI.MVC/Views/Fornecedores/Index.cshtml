@@ -1,0 +1,116 @@
+﻿@model IEnumerable<TW.PetSuite.Application.ViewModels.FornecedorViewModel>
+
+@{
+    ViewBag.Title = "PetSuite - Fornecedores";
+}
+
+<div class="container">
+    <div class="panel-default">
+        <div class="panel-heading">
+            <h2>Fornecedores</h2>
+        </div>
+    </div>
+
+    @if (TempData["MensagemRetorno"] != null && TempData["Erro"] != null)
+    {
+        if (!Convert.ToBoolean(TempData["Erro"].ToString()))
+        {
+            <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <p>@Html.Raw(TempData["MensagemRetorno"].ToString())</p>
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-danger alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                <p>@Html.Raw(TempData["MensagemRetorno"].ToString())</p>
+            </div>
+        }
+    }
+
+    <br>
+    <p>
+        @Html.ActionLink("Novo", "Create", null, new { @class = "btn btn-primary" })
+    </p>
+
+    @using (Html.BeginForm("Index", "Produtos", FormMethod.Get))
+    {
+        <table class="table table-striped table-hover table-responsive" id="tblFornecedores">
+            <thead>
+                <tr>
+                    <th>
+                        <label for="Codigo">Código</label>
+                    </th>
+                    <th>
+                        <label for="Nome">Nome</label>
+                    </th>
+                    <th>
+                        <label for="Telefone1">Telefone</label>
+                    </th>
+                    <th>
+                        <label for="Telefone2">Telefone 2</label>
+                    </th>
+                    <th>
+                        <label for="Email">E-mail</label>
+                    </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Codigo)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Nome)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Telefone1)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Telefone2)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Email)
+                        </td>
+                        <td>
+                            @Html.ActionLink(" ", "Edit", new { id = item.FornecedorId }, htmlAttributes: new { @class = "btn btn-default btn-sm glyphicon glyphicon-pencil", title = "Editar" }) |
+                            <!--@Html.ActionLink(" ", "Details", new { id = item.FornecedorId }, htmlAttributes: new { @class = "btn btn-default btn-sm fa fa-list-alt", title = "" }) |-->
+                            <button class="btn btn-danger btn-sm" id="apagarProdutoSelecionado" data-id="@item.FornecedorId" data-toggle="modal" title="Excluir"><i class="glyphicon glyphicon-trash"></i></button>
+                        </td>
+                    </tr>
+
+                }
+            </tbody>
+        </table>
+
+    }
+
+    <div id="modalDelete"></div>
+</div>
+
+@section Scripts{
+    <script>
+        $(document).ready(function () {
+            $(".btn-danger").click(function () {
+                var url = "/Fornecedores/Delete";
+                var id = $(this).attr('data-id');
+                $.get(url + '/' + id, function (data) {
+                    $("#modalDelete").html(data);
+                    $("#modalDeletePadrao").modal('show');
+                });
+            });
+
+            $("#tblFornecedores").DataTable();
+
+        });
+
+        $(function () {
+            $(".btn").tooltip();
+        });
+
+    </script>
+}

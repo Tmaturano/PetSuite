@@ -1,0 +1,130 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Presentation", "0 - Presentation", "{282C90AE-0B8C-493B-A5C8-77709CC87545}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Services", "1 - Services", "{1C574BA0-7DCD-4E57-8102-92631F7EDB6C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Application", "2 - Application", "{504C8A0D-F0CD-4D8F-BF15-A8E27089F8C0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Domain", "3 - Domain", "{28CE0199-90D2-411B-BBEA-0D1581F836F3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4 - Infra", "4 - Infra", "{7A775BAC-53C2-4D51-AAD8-25FF03FA1FE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.PetSuite.Application", "TW.PetSuite.Application\TW.PetSuite.Application.csproj", "{8DDC6D24-04D2-44B9-9263-11AEBD83FD7C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.PetSuite.Domain", "TW.PetSuite.Domain\TW.PetSuite.Domain.csproj", "{0F702750-994E-4ED5-9591-4EF6D0EB6F6E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", "{0EB475B4-1DAF-493C-8DB4-EADB043BA654}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.PetSuite.Infra.Data", "TW.PetSuite.Infra.Data\TW.PetSuite.Infra.Data.csproj", "{C2A12403-A97B-4960-96EB-DF5A61948074}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{8D12A324-0C3C-4D41-8453-BF390E675466}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EC6B2F4F-623B-495D-B1D1-BB4D834838F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.Infra.CrossCutting.Identity", "TW.Infra.CrossCutting.Identity\TW.Infra.CrossCutting.Identity.csproj", "{A845606E-C9F0-4791-8102-62192EE49BB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.Infra.CrossCutting.IoC", "TW.Infra.CrossCutting.IoC\TW.Infra.CrossCutting.IoC.csproj", "{B7F50CDD-1CAC-436F-847D-98A74D3C084D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.Infra.CrossCutting.Log", "TW.Infra.CrossCutting.Log\TW.Infra.CrossCutting.Log.csproj", "{D10C37B9-81F9-48A2-BD3D-23D3ED14E4C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TW.PetSuite.UI.MVC", "TW.PetSuite.UI.MVC\TW.PetSuite.UI.MVC.csproj", "{0092A6CD-9DC7-47A1-AA5F-3D1B6ACBF1A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetSuite.Domain.Tests", "DomainTest\PetSuite.Domain.Tests.csproj", "{82FB8035-6B99-4384-BDC1-B47C2AA651B9}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 9
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://thiagomaturana.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TW.Infra.CrossCutting.Identity\\TW.Infra.CrossCutting.Identity.csproj
+		SccProjectTopLevelParentUniqueName1 = PetSuite.sln
+		SccProjectName1 = TW.Infra.CrossCutting.Identity
+		SccLocalPath1 = TW.Infra.CrossCutting.Identity
+		SccProjectUniqueName2 = TW.Infra.CrossCutting.IoC\\TW.Infra.CrossCutting.IoC.csproj
+		SccProjectTopLevelParentUniqueName2 = PetSuite.sln
+		SccProjectName2 = TW.Infra.CrossCutting.IoC
+		SccLocalPath2 = TW.Infra.CrossCutting.IoC
+		SccProjectUniqueName3 = TW.Infra.CrossCutting.Log\\TW.Infra.CrossCutting.Log.csproj
+		SccProjectTopLevelParentUniqueName3 = PetSuite.sln
+		SccProjectName3 = TW.Infra.CrossCutting.Log
+		SccLocalPath3 = TW.Infra.CrossCutting.Log
+		SccProjectUniqueName4 = TW.PetSuite.Application\\TW.PetSuite.Application.csproj
+		SccProjectTopLevelParentUniqueName4 = PetSuite.sln
+		SccProjectName4 = TW.PetSuite.Application
+		SccLocalPath4 = TW.PetSuite.Application
+		SccProjectUniqueName5 = TW.PetSuite.Domain\\TW.PetSuite.Domain.csproj
+		SccProjectTopLevelParentUniqueName5 = PetSuite.sln
+		SccProjectName5 = TW.PetSuite.Domain
+		SccLocalPath5 = TW.PetSuite.Domain
+		SccProjectUniqueName6 = TW.PetSuite.Infra.Data\\TW.PetSuite.Infra.Data.csproj
+		SccProjectTopLevelParentUniqueName6 = PetSuite.sln
+		SccProjectName6 = TW.PetSuite.Infra.Data
+		SccLocalPath6 = TW.PetSuite.Infra.Data
+		SccProjectUniqueName7 = TW.PetSuite.UI.MVC\\TW.PetSuite.UI.MVC.csproj
+		SccProjectTopLevelParentUniqueName7 = PetSuite.sln
+		SccProjectName7 = TW.PetSuite.UI.MVC
+		SccLocalPath7 = TW.PetSuite.UI.MVC
+		SccProjectUniqueName8 = DomainTest\\PetSuite.Domain.Tests.csproj
+		SccProjectTopLevelParentUniqueName8 = PetSuite.sln
+		SccProjectName8 = DomainTest
+		SccLocalPath8 = DomainTest
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DDC6D24-04D2-44B9-9263-11AEBD83FD7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DDC6D24-04D2-44B9-9263-11AEBD83FD7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DDC6D24-04D2-44B9-9263-11AEBD83FD7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DDC6D24-04D2-44B9-9263-11AEBD83FD7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F702750-994E-4ED5-9591-4EF6D0EB6F6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F702750-994E-4ED5-9591-4EF6D0EB6F6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F702750-994E-4ED5-9591-4EF6D0EB6F6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F702750-994E-4ED5-9591-4EF6D0EB6F6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2A12403-A97B-4960-96EB-DF5A61948074}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2A12403-A97B-4960-96EB-DF5A61948074}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2A12403-A97B-4960-96EB-DF5A61948074}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2A12403-A97B-4960-96EB-DF5A61948074}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A845606E-C9F0-4791-8102-62192EE49BB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A845606E-C9F0-4791-8102-62192EE49BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A845606E-C9F0-4791-8102-62192EE49BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A845606E-C9F0-4791-8102-62192EE49BB0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7F50CDD-1CAC-436F-847D-98A74D3C084D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7F50CDD-1CAC-436F-847D-98A74D3C084D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7F50CDD-1CAC-436F-847D-98A74D3C084D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7F50CDD-1CAC-436F-847D-98A74D3C084D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D10C37B9-81F9-48A2-BD3D-23D3ED14E4C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D10C37B9-81F9-48A2-BD3D-23D3ED14E4C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D10C37B9-81F9-48A2-BD3D-23D3ED14E4C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D10C37B9-81F9-48A2-BD3D-23D3ED14E4C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0092A6CD-9DC7-47A1-AA5F-3D1B6ACBF1A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0092A6CD-9DC7-47A1-AA5F-3D1B6ACBF1A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0092A6CD-9DC7-47A1-AA5F-3D1B6ACBF1A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0092A6CD-9DC7-47A1-AA5F-3D1B6ACBF1A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82FB8035-6B99-4384-BDC1-B47C2AA651B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82FB8035-6B99-4384-BDC1-B47C2AA651B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82FB8035-6B99-4384-BDC1-B47C2AA651B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82FB8035-6B99-4384-BDC1-B47C2AA651B9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8DDC6D24-04D2-44B9-9263-11AEBD83FD7C} = {504C8A0D-F0CD-4D8F-BF15-A8E27089F8C0}
+		{0F702750-994E-4ED5-9591-4EF6D0EB6F6E} = {28CE0199-90D2-411B-BBEA-0D1581F836F3}
+		{0EB475B4-1DAF-493C-8DB4-EADB043BA654} = {7A775BAC-53C2-4D51-AAD8-25FF03FA1FE7}
+		{C2A12403-A97B-4960-96EB-DF5A61948074} = {0EB475B4-1DAF-493C-8DB4-EADB043BA654}
+		{8D12A324-0C3C-4D41-8453-BF390E675466} = {7A775BAC-53C2-4D51-AAD8-25FF03FA1FE7}
+		{A845606E-C9F0-4791-8102-62192EE49BB0} = {8D12A324-0C3C-4D41-8453-BF390E675466}
+		{B7F50CDD-1CAC-436F-847D-98A74D3C084D} = {8D12A324-0C3C-4D41-8453-BF390E675466}
+		{D10C37B9-81F9-48A2-BD3D-23D3ED14E4C0} = {8D12A324-0C3C-4D41-8453-BF390E675466}
+		{0092A6CD-9DC7-47A1-AA5F-3D1B6ACBF1A9} = {282C90AE-0B8C-493B-A5C8-77709CC87545}
+		{82FB8035-6B99-4384-BDC1-B47C2AA651B9} = {28CE0199-90D2-411B-BBEA-0D1581F836F3}
+	EndGlobalSection
+EndGlobal
